@@ -81,28 +81,26 @@ console.log("messyUsername:", messyUsername);
 // TODO B2: Create cleanUsername by trimming spaces and lowercasing.
 // Hint: messyUsername.trim().toLowerCase()
 let cleanUsername = messyUsername.trim().toLowerCase(); // TODO
-console.log("clean username:", cleanUsername);
 
 // TODO B3: Replace spaces inside the username with underscores.
 // Hint: .replaceAll(" ", "_")
 cleanUsername = cleanUsername.replaceAll(" ", "_"); // TODO
-console.log("clean username:", cleanUsername);
 
 // TODO B4: Print: Clean username: <cleanUsername>
-console.log(""); // TODO
+console.log("clean Username:", cleanUsername); // TODO
 
 // TODO B5: Print: Includes 'nick': <true/false>
 // Hint: cleanUsername.includes("nick")
-console.log(""); // TODO
+console.log(cleanUsername.includes("maken")); // TODO
 
 // TODO B6: Create a variable domain set to "school.edu"
-let domain = ""; // TODO
+let domain = "school.edu"; // TODO
 
 // TODO B7: Create email = "<cleanUsername>@<domain>" using a template literal
-let email = ""; // TODO
+let email = `${cleanUsername}@${domain}`; // TODO
 
 // TODO B8: Print: Email: <email>
-console.log(""); // TODO
+console.log("Email:", email); // TODO
 
 /*
 EXPECTED OUTPUT (if messyUsername was "   NiCK Armstrong   "):
@@ -118,32 +116,35 @@ Email: nick_armstrong@school.edu
 console.log("\n=== PART C: Numbers ===\n");
 
 // TODO C1: Create price (number) and quantity (number)
-let price = 0;    // TODO
-let quantity = 0; // TODO
+let price = 4;    // TODO
+let quantity = 9; // TODO
 
 // TODO C2: Compute cost = price * quantity
-let cost = 0; // TODO
+let cost = price * quantity; // TODO
 
 // TODO C3: Print: Cost raw: <cost>
-console.log(""); // TODO
+console.log("Cost raw:", cost); // TODO
 
 // TODO C4: Print: Cost rounded: <cost to 2 decimals>
 // Hint: cost.toFixed(2)
-console.log(""); // TODO
+console.log("Cost rounded:", cost.toFixed(2)); // TODO
 
 // TODO C5: Compute quantityIsEven (boolean) using modulo (%)
 // Hint: (quantity % 2) === 0
-let quantityIsEven = false; // TODO
+let quantityIsEven = (quantity % 2) === 0; // TODO
+
+
+
 
 // TODO C6: Print: Quantity is even: <true/false>
-console.log(""); // TODO
+console.log("Quantity is even:", quantityIsEven); // TODO
 
 // TODO C7: Create rand1to10 = random integer 1..10 inclusive
 // Hint: Math.floor(Math.random() * 10) + 1
-let rand1to10 = 0; // TODO
+let rand1to10 = Math.floor(Math.random() * 10) + 1; // TODO
 
 // TODO C8: Print: Random 1-10: <rand1to10>
-console.log(""); // TODO
+console.log("Random 1-10:", rand1to10); // TODO
 
 /*
 EXPECTED OUTPUT (random will differ):
@@ -162,28 +163,28 @@ Random 1-10: <some number 1..10>
 console.log("\n=== PART D: Conversions + NaN ===\n");
 
 // TODO D1: Create three “input” strings:
-let inputA = ""; // TODO example: "12"
-let inputB = ""; // TODO example: "3.5"
-let inputC = ""; // TODO example: "nope"
+let inputA = "13"; // TODO example: "12"
+let inputB = "4.3"; // TODO example: "3.5"
+let inputC = "nope"; // TODO example: "nope"
 
 // TODO D2: Convert inputA and inputB into numbers using Number()
-let numA = 0; // TODO
-let numB = 0; // TODO
+let numA = Number ("13"); // TODO
+let numB = Number ("4.3"); // TODO
 
 // TODO D3: Print: A + B = <sum>
-console.log(""); // TODO
+console.log("A + B =", numA + numB); // TODO
 
 // TODO D4: Convert inputC into a number (it might become NaN)
-let numC = 0; // TODO
+let numC = Number ("Nope"); // TODO
 
 // TODO D5: Print: C as number: <numC>
-console.log(""); // TODO
+console.log("C as number:", numC); // TODO
 
 // TODO D6: Create cIsNaN using Number.isNaN(numC)
-let cIsNaN = false; // TODO
+let cIsNaN = Number.isNaN(numC); // TODO
 
 // TODO D7: Print: C is NaN: <true/false>
-console.log(""); // TODO
+console.log("C is NaN:", cIsNaN); // TODO
 
 // TODO D8: Create safeC
 // If cIsNaN is true, safeC should be 0. Otherwise safeC should be numC.
@@ -191,7 +192,7 @@ console.log(""); // TODO
 let safeC = 0; // TODO
 
 // TODO D9: Print: safeC: <safeC>
-console.log(""); // TODO
+console.log("safeC:", safeC); // TODO
 
 /*
 EXPECTED OUTPUT (if inputA="12", inputB="3.5", inputC="nope"):
