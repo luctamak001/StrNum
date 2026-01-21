@@ -209,24 +209,24 @@ safeC: 0
 console.log("\n=== PART E: Mini Receipt ===\n");
 
 // TODO E1: Create item1Name (string) and item1Price (number)
-let item1Name = ""; // TODO
-let item1Price = 0; // TODO
+let item1Name = "Coke"; // TODO
+let item1Price = 0.50; //TODO
 
 // TODO E2: Create item2Name (string) and item2Price (number)
-let item2Name = ""; // TODO
-let item2Price = 0; // TODO
+let item2Name = "Dorito"; // TODO
+let item2Price = 1.20; // TODO
 
 // TODO E3: Create taxRate (number). Example: 0.07
-let taxRate = 0; // TODO
+let taxRate = 0.10; // TODO
 
 // TODO E4: Compute subtotal (add the two prices)
-let subtotal = 0; // TODO
+let subtotal = item1Price + item2Price; // TODO
 
 // TODO E5: Compute taxAmount = subtotal * taxRate
-let taxAmount = 0; // TODO
+let taxAmount = subtotal * taxRate; // TODO
 
 // TODO E6: Compute total = subtotal + taxAmount
-let total = 0; // TODO
+let total = subtotal + taxAmount; // TODO
 
 // TODO E7: Print the receipt exactly in this format:
 //
@@ -242,7 +242,7 @@ let total = 0; // TODO
 // - Use template literals: `text ${variable} more text`
 //
 // TODO E7a: Print "Receipt"
-console.log(""); // TODO
+console.log("Receipt"); // TODO
 
 // TODO E7b: Print item 1 line (use item1Name and item1Price.toFixed(2))
 console.log(""); // TODO
