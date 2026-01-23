@@ -245,19 +245,19 @@ let total = subtotal + taxAmount; // TODO
 console.log("Receipt"); // TODO
 
 // TODO E7b: Print item 1 line (use item1Name and item1Price.toFixed(2))
-console.log(""); // TODO
+console.log(`Item: ${item1Name} | Price: $${item1Price.toFixed(2)}`); // TODO
 
 // TODO E7c: Print item 2 line
-console.log(""); // TODO
+console.log(`Item: ${item2Name} | Price: $${item2Price.toFixed(2)}`); // TODO
 
 // TODO E7d: Print subtotal line
-console.log(""); // TODO
+console.log(`Subtotal: $${subtotal.toFixed(2)}`); // TODO
 
 // TODO E7e: Print tax line
-console.log(""); // TODO
+console.log(`Tax: $${taxAmount.toFixed(2)}`); // TODO
 
 // TODO E7f: Print total line
-console.log(""); // TODO
+console.log(`Total: $${total.toFixed(2)}`); // TODO
 
 // ============================================================
 // 37–40 min: CLEAN UP + REFLECTION (comments)
